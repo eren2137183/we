@@ -2,7 +2,8 @@
   <div class="hello">
     
     <h1>{{showOverView?"Overview":'Upcoming'}}</h1>
-    <button class='btn' @click="showOverView = !showOverView"> Toggle</button>
+    <h1> https://practical-allen-f1d4f7.netlify.app/</h1>
+    <button class='button' @click="showOverView = !showOverView"> Toggle</button>
     <div class="wrapper">
       <a :href="recipe.link" v-for="recipe in todayR" :key="recipe.name"  :style="{backgroundImage:`url(${recipe.img})`}" class="recipe">
        {{recipe.date.format("DD.MM.")}}   {{recipe.name}}
@@ -84,6 +85,26 @@ export default {
 .recipe img {
   width: 100%;
   
+}
+button {
+  margin-bottom: 30px;
+  width: 350px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: gray;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 6px 6px #06f;
+  outline:none;
+}
+button:active {
+  /* set time duration to your needs */
+  animation: gradient 6000ms;
+  background: #f88;
+  color: #fff;
+  box-shadow: none;
 }
 /* 
 @keyframes flashyshit{
