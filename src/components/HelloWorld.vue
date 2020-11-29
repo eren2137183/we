@@ -2,7 +2,7 @@
   <div class="hello">
     
     <h1>{{showOverView?"Overview":'Upcoming'}}</h1>
-    <h1> https://practical-allen-f1d4f7.netlify.app/</h1>
+    <h1> https://objective-feynman-9ea09d.netlify.app/</h1>
     <button class='button' @click="showOverView = !showOverView"> Toggle</button>
     <div class="wrapper">
       <a :href="recipe.link" v-for="recipe in todayR" :key="recipe.name"  :style="{backgroundImage:`url(${recipe.img})`}" class="recipe">
